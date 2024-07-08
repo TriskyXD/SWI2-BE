@@ -40,8 +40,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
                 .setAllowedOriginPatterns("*")
                 .withSockJS();
         registry.addEndpoint("/ws-message-ph")
-                .setAllowedOriginPatterns("*")
-                .withSockJS();
+                .setAllowedOriginPatterns("*");
+                //.withSockJS();
     }
     @Override
     public void configureClientInboundChannel(ChannelRegistration registration) {
